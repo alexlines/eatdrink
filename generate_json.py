@@ -10,7 +10,7 @@ def get_template(default='map-template.json'):
     return template
 
 def get_data(file):
-    reader = csv.DictReader(open(file), delimiter='|')
+    reader = csv.DictReader(open(file), delimiter=',')
     return [ row for row in reader ]
 
 def workflow(input_file):
